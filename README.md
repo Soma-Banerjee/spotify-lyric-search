@@ -12,6 +12,15 @@ The dataset contains the following columns:
 
 Only the `artist`, `song`, and `text` columns are used for model training and prediction.
 
+
+Due to GitHub file size limitations, the dataset is not included in this repository.
+
+Dataset Source:
+(https://www.kaggle.com/datasets/joebeachcapital/57651-spotify-songs)
+
+After downloading, place the CSV file inside the `data/` folder:
+
+
 ## Technologies Used
 - Python
 - Pandas
@@ -24,9 +33,14 @@ Only the `artist`, `song`, and `text` columns are used for model training and pr
 3. Similarity computation using Cosine Similarity
 4. Prediction of the most relevant song and artist based on lyric similarity
 
+# Accuracy
+This model uses TF-IDF vectorization combined with cosine similarity to match a lyric snippet with the most relevant song lyrics. Performance is evaluated by testing multiple lyric snippets and observing correct song and artist identification.
+
 ## Installation & Execution
 
 ### Step 1: Clone the repository
 ```bash
 git clone https://github.com/your-username/spotify-lyric-search.git
 cd spotify-lyric-search
+
+
